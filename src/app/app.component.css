@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lalezar&display=swap');
+
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .archivo-regular {
+    font-family: "Archivo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,121 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lalezar&display=swap');
-
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-main{
-    padding: 20px 50px 20px 50px;
+main {
+  padding: 20px 50px 20px 50px;
 }
 
-.lalezar-regular {
-    font-family: "Lalezar", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .archivo-regular {
-    font-family: "Archivo", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header p.titulo{
-    font-family: "Lalezar";
-    font-size: 70px;
-    color: #0063B4;
-  }
-
-header button{
-    width: 90px;
-    height: 45px;
-    border-radius: 10px;
-    border: none;
-    background-color: #058D0A;
-    margin-bottom: 10px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header button span{
-    color: #ffffff;
-    font-size: 35px;
+header p.titulo {
+  font-family: "Lalezar";
+  font-size: 70px;
+  color: #0063b4;
 }
 
-.boxes{
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+header button {
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #058d0a;
+  margin-bottom: 10px;
 }
 
-.boxes .box{
-    width: 96%;
-    height: 60px;
-    background-color: #B4DDFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 0 25px;
-    border-radius: 15px;
+header button span {
+  color: #ffffff;
+  font-size: 35px;
 }
 
-.boxes .box .pessoa{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.boxes {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
-.boxes .box .pessoa .nome{
-    font-family: "Lalezar";
-    font-size: 45px;
-    color: #0063B4;
-    margin-top: 10px;
+.boxes .box {
+  width: 96%;
+  height: 60px;
+  background-color: #b4ddff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  border-radius: 15px;
 }
 
-.boxes .box .pessoa .numero{
-    font-family: "Archivo";
-    font-size: 17px;
-    color: #0063B4;
-    align-self: center;
+.boxes .box .pessoa {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.boxes .box .botoes{
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.boxes .box .pessoa .nome {
+  font-family: "Lalezar";
+  font-size: 45px;
+  color: #0063b4;
+  margin-top: 10px;
 }
 
-.boxes .box .botoes button{
-    width: 40px;
-    height: 40px;
-    border-radius: 6px;
-    border: none;
-    color: #ffffff;
+.boxes .box .pessoa .numero {
+  font-family: "Archivo";
+  font-size: 17px;
+  color: #0063b4;
+  align-self: center;
 }
 
-button.delete{
-    background-color: #BE0000;
+.boxes .box .botoes {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-button.edit{
-    background-color: #F2D600;
+.boxes .box .botoes button {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
 }
 
-button.detail{
-    background-color: #41CC00;
+button.delete {
+  background-color: #be0000;
+}
+
+button.edit {
+  background-color: #f2d600;
+}
+
+button.detail {
+  background-color: #41cc00;
 }

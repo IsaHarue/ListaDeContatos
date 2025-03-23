@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 
 @Component({
   selector: 'app-edicao',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule, NgxMaskDirective],
   templateUrl: './edicao.component.html',
-  styleUrl: './edicao.component.css'
+  styleUrl: './edicao.component.css',
+  providers: [provideNgxMask()]
 })
 export class EdicaoComponent {
 

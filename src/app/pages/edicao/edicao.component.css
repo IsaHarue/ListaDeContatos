@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px 50px 20px 50px;
+  }
+  
+  .title {
+    font-family: "Lalezar";
+    font-size: 70px;
+    color: #0063b4;
+  }
+  
+  form {
+    width: 96%;
+    height: auto;
+    background-color: #b4ddff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 25px 45px 25px;
+    border-radius: 15px;
+  }
+  
+  form label {
+    font-family: "Lalezar";
+    font-size:30px;
+    color: #0063b4;
+    margin-top: 15px;
+  }
+  
+  form input{
+      width: 98%;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      font-family: "Lalezar";
+      font-size: 20px;
+      color: #65BAFF;
+      padding-left: 10px;
+  }
+  
+  form input::placeholder{
+    font-family: "Lalezar";
+    font-size: 20px;
+    color: #65BAFF;
+  }
+  
+  .botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 200px;
+  }
+  
+  button{
+    width: 200px;
+    height: 55px;
+    font-family: "Lalezar";
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-top: 50px;
+  }
+  
+  button.btnVoltar{
+    color: #0063b4;
+    border: 3px solid #0063b4;
+  }
+  
+  button.btnAdd{
+    color: #fff;
+    background-color: #0063b4;
+  }
+  
+  
