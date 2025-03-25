@@ -17,10 +17,10 @@
           <button class="delete" (click)="excluirContato(contato.id!)">
             <span class="material-symbols-rounded">delete_forever</span>
           </button>
-          <button class="edit" routerLink="/edicao">
+          <button class="edit" routerLink="/edicao/{{ contato.id }}">
             <span class="material-symbols-rounded">edit_square</span>
           </button>
-          <button class="detail" routerLink="/detalhes">
+          <button class="detail" routerLink="/detalhes/{{ contato.id }}">
             <span class="material-symbols-rounded">info</span>
           </button>
         </div>

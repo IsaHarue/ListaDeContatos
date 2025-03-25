@@ -1,11 +1,12 @@
-<main>
+<main *ngIf="contato">
     <p class="title">Editar Contato</p>
-    <form action="">
+    <form (ngSubmit)="editarContato()">
         <label for="">Nome:</label>
         <input 
         type="text" 
         name="NName" 
         id="IName" 
+        [(ngModel)]="contato.nome"
         placeholder="Digite o nome" 
         maxlength="50" 
         pattern="[A-Za-zÀ-ÿ\s]+" 
@@ -13,14 +14,15 @@
         oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" 
          style="text-transform: capitalize;" required>
         <label for="">Número:</label>
-        <input type="tel" name="NTel" id="NTel" placeholder="+00 (XX) XXXXX-XXXX" mask="+00 (00) 00000-0000"  required>
+        <input type="tel" name="NTel" id="NTel" placeholder="+00 (XX) XXXXX-XXXX" mask="+00 (00) 00000-0000" [(ngModel)]="contato.numero" required>
+        <div class="botoes">
+            <button class="btnVoltar" routerLink="/">
+                <p>VOLTAR</p>
+            </button>
+            <button class="btnAdd" type="submit">
+                <p>EDITAR</p>
+            </button>
+        </div>
     </form>
-    <div class="botoes">
-        <button class="btnVoltar" routerLink="/">
-            <p>VOLTAR</p>
-        </button>
-        <button class="btnAdd" routerLink="/">
-            <p>EDITAR</p>
-        </button>
-    </div>
+    
 </main>
