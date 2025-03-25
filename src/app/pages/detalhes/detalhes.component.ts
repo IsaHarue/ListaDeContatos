@@ -5,7 +5,7 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 @Component({
   selector: 'app-detalhes',
   standalone: true,
-  imports: [RouterModule, NgxMaskDirective],
+  imports: [RouterModule],
   templateUrl: './detalhes.component.html',
   styleUrl: './detalhes.component.css',
     providers: [provideNgxMask()]

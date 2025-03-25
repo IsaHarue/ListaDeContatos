@@ -63,7 +63,7 @@ header button span {
 
 .boxes .box .pessoa .nome {
   font-family: "Lalezar";
-  font-size: 45px;
+  font-size: 40px;
   color: #0063b4;
   margin-top: 10px;
 }
@@ -71,7 +71,7 @@ header button span {
 .boxes .box .pessoa .numero {
   font-family: "Archivo";
   font-size: 17px;
-  color: #0063b4;
+  color: #000000;
   align-self: center;
 }
 
