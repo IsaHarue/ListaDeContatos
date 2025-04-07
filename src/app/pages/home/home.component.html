@@ -10,11 +10,11 @@
     <div class="boxes" *ngIf="contatos.length > 0; else noContacts">
       <div class="box" *ngFor="let contato of contatos">
         <div class="pessoa">
-          <p class="nome">{{ contato.nome }}</p>
-          <p class="numero">{{ contato.numero }}</p>
+          <p class="nome" >{{ contato.nome| titlecase }}</p>
+          <p class="numero">{{ aplicarMascara(contato.numero) }}</p>
         </div>
         <div class="botoes">
-          <button class="delete" (click)="excluirContato(contato.id!)">
+          <button class="delete" (click)="confirmarExclusao(contato.id!)">
             <span class="material-symbols-rounded">delete_forever</span>
           </button>
           <button class="edit" routerLink="/edicao/{{ contato.id }}">
@@ -27,7 +27,7 @@
       </div>
     </div>
     <ng-template #noContacts>
-      <p>Nenhum contato encontrado.</p>
+      <p class="textoNoContacts">Nenhum contato encontrado.</p>
     </ng-template>
   </div>
 </main>

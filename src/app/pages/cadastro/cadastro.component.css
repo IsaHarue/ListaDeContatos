@@ -67,6 +67,11 @@ button{
   cursor: pointer;
   padding-top: 5px;
   margin-top: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover{
+  transform: scale(1.1);
 }
 
 button.btnVoltar{
@@ -79,3 +84,16 @@ button.btnAdd{
   background-color: #0063b4;
 }
 
+
+button.btnAdd[disabled]{
+  background-color: #707070;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: bolder;
+}

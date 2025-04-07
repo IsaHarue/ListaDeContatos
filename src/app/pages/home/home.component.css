@@ -26,6 +26,13 @@ header button {
   border: none;
   background-color: #058d0a;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+header button:hover {
+  transform: scale(1.1);
 }
 
 header button span {
@@ -40,12 +47,12 @@ header button span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
 .boxes .box {
   width: 96%;
-  height: 60px;
+  height: auto;
   background-color: #b4ddff;
   display: flex;
   flex-direction: row;
@@ -63,14 +70,14 @@ header button span {
 
 .boxes .box .pessoa .nome {
   font-family: "Lalezar";
-  font-size: 40px;
+  font-size: 30px;
   color: #0063b4;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .boxes .box .pessoa .numero {
   font-family: "Archivo";
-  font-size: 17px;
+  font-size: 15px;
   color: #000000;
   align-self: center;
 }
@@ -82,15 +89,22 @@ header button span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 10px;
 }
 
 .boxes .box .botoes button {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 6px;
   border: none;
   color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boxes .box .botoes button:hover {
+  transform: scale(1.1);
 }
 
 button.delete {

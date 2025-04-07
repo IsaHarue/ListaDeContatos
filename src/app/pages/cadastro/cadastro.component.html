@@ -1,28 +1,43 @@
 <main>
-    <p class="title">Adicionar Contato</p>
-    <form (ngSubmit)="criarContato()">
-        <label for="">Nome:</label>
-        <input 
-        type="text" 
-        name="NName" 
-        id="IName" 
-        [(ngModel)]="contato.nome"
-        placeholder="Digite o nome" 
-        maxlength="30" 
-        pattern="[A-Za-zÀ-ÿ\s]+" 
-        title="O nome deve conter apenas letras e espaços" 
-        oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" 
-         style="text-transform: capitalize;" required>
-        <label for="">Número:</label>
-        <input type="tel" name="NTel" id="NTel" [(ngModel)]="contato.numero" placeholder="+00 (XX) XXXXX-XXXX" mask="+00 (00) 00000-0000"  required>
-    
+  <p class="title">Adicionar Contato</p>
+  <form (ngSubmit)="criarContato()" #contatoForm="ngForm">
+    <label for="">Nome:</label>
+    <input
+      type="text"
+      name="NName"
+      id="IName"
+      [(ngModel)]="contato.nome"
+      placeholder="Digite o nome"
+      maxlength="30"
+      pattern="[A-Za-zÀ-ÿ\s]+"
+      title="O nome deve conter apenas letras e espaços"
+      oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')"
+      style="text-transform: capitalize"
+      required
+      #nome="ngModel"
+    />
+    <div *ngIf="nome.invalid && nome.touched" class="error">O nome é obrigatório e deve conter apenas letras e espaços.</div>
+  
+    <label for="">Número:</label>
+    <input
+      type="tel"
+      name="NTel"
+      id="NTel"
+      [(ngModel)]="contato.numero"
+      placeholder="+00 (XX) XXXXX-XXXX"
+      mask="+00 (00) 00000-0000"
+      required
+      #numero="ngModel"
+    />
+    <div *ngIf="numero.invalid && numero.touched" class="error">O número de telefone é obrigatório e deve estar no formato correto.</div>
+
     <div class="botoes">
-        <button class="btnVoltar" routerLink="/">
-            <p>VOLTAR</p>
-        </button>
-        <button class="btnAdd"  type="submit"> 
-            <p>ADICIONAR</p>
-        </button>
+      <button class="btnVoltar" routerLink="/">
+        <p>VOLTAR</p>
+      </button>
+      <button class="btnAdd" type="submit" [disabled]="contatoForm.invalid">
+        <p>ADICIONAR</p>
+      </button>
     </div>
-</form>
+  </form>
 </main>
