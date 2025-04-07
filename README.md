@@ -53,20 +53,25 @@ cd ListaDeContatos
 ```
 
 2. **Instale as Dependências:**
+```bash
 npm install
+```
 
 3. **Configure o banco de dados:**
 Vá até a pasta backend e localize o arquivo database.ts e nee modifique:
 
+```bash
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=lista_contatos
 DB_USER=seu_usuario  //modifique esse
 DB_PASSWORD=sua_senha //modifique esse
+``` 
 
 4. **inicie o servidor**
+```bash
 npm start
-
+```
 ---
 
 ## 🧪 Scripts Disponíveis
@@ -85,6 +90,8 @@ Para hospedar online, recomenda-se usar serviços como:
 Frontend: Vercel, Netlify, Firebase Hosting
 
 Backend + Banco de Dados: Render, Railway, Supabase
+
+---
 
 ## 🧠 Autor
 Isa Harue 
