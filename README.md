@@ -1,59 +1,93 @@
-# ListaDeContatos
+# 📒 ListaDeContatos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Uma aplicação web para gerenciar contatos (CRUD completo), desenvolvida com **Angular** no frontend e **Node.js** com **TypeScript** e **PostgreSQL** no backend.
 
-## Development server
+## 🔧 Funcionalidades
 
-To start a local development server, run:
+- Adicionar, editar, visualizar e excluir contatos
+- Validação de formulários
+- Máscara para números de telefone
+- Ordenação por ordem de criação (ID)
+- Consumo de API REST
+- Integração backend e frontend
 
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### Frontend
+
+- Angular 19
+- HTML/CSS
+- TypeScript
+- RxJS
+- Ngx-mask
+
+### Backend
+
+- Node.js
+- Express.js
+- TypeScript
+- PostgreSQL
+- Dotenv
+- ts-node
+
+---
+
+## 🧑‍💻 Instalação e Execução Local
+
+### Pré-requisitos
+
+- Node.js
+- PostgreSQL
+- Angular CLI (`npm install -g @angular/cli`)
+- ts-node (`npm install -g ts-node`)
+- Git (opcional)
+
+### Passos
+
+1. **Clone o repositório:**
 ```bash
-ng serve
+git clone https://github.com/IsaHarue/ListaDeContatos.git
+cd ListaDeContatos
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. **Instale as Dependências:**
+npm install
 
-## Code scaffolding
+3. **Configure o banco de dados:**
+Vá até a pasta backend e localize o arquivo database.ts e nee modifique:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=lista_contatos
+DB_USER=seu_usuario  //modifique esse
+DB_PASSWORD=sua_senha //modifique esse
 
-```bash
-ng generate component component-name
-```
+4. **inicie o servidor**
+npm start
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🧪 Scripts Disponíveis
+npm start           # Inicia frontend + backend
+npm run build       # Compila o projeto Angular
+npm run serve       # Apenas frontend em modo dev
+ts-node backend/server.ts  # Inicia apenas backend
 
-## Building
+---
 
-To build the project run:
+## 📝 Observações
+O projeto não está publicado no GitHub Pages, pois depende de um backend.
 
-```bash
-ng build
-```
+Para hospedar online, recomenda-se usar serviços como:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Frontend: Vercel, Netlify, Firebase Hosting
 
-## Running unit tests
+Backend + Banco de Dados: Render, Railway, Supabase
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧠 Autor
+Isa Harue 
+GitHub
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
