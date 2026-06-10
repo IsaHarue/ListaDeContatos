@@ -3,14 +3,13 @@ import { DataSource } from 'typeorm';
 import { Contato } from './entities/contato.entity';
 
 export const AppDataSource = new DataSource({
-  type: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: 'IsaHarue2006',
-  database: 'lista_de_contatos',
+   type: 'postgres',
+  url: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
   entities: [Contato],
-  synchronize: true, // Sincroniza automaticamente as tabelas (não recomendado em produção)
+  synchronize: true, // Sincroniza automaticamente as tabelas
 });
 
 AppDataSource.initialize()
