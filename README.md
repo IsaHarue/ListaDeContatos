@@ -1,4 +1,4 @@
-# 📒 ListaDeContatos
+# ListaDeContatos
 
 Uma aplicação web para gerenciar contatos (CRUD completo), desenvolvida com **Angular** no frontend e **Node.js** com **TypeScript** e **PostgreSQL** no backend.
 
@@ -13,7 +13,7 @@ Uma aplicação web para gerenciar contatos (CRUD completo), desenvolvida com **
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## ⚙️Tecnologias Utilizadas
 
 ### Frontend
 
@@ -74,7 +74,7 @@ npm start
 ```
 ---
 
-## 🧪 Scripts Disponíveis
+## 👨‍💻 Scripts Disponíveis
 npm start           # Inicia frontend + backend
 npm run build       # Compila o projeto Angular
 npm run serve       # Apenas frontend em modo dev
@@ -93,8 +93,8 @@ Backend + Banco de Dados: Render, Railway, Supabase
 
 ---
 
-## 🧠 Autor
-Isa Harue 
+## Autora
+Isabelle Harue 
 GitHub
 
 
