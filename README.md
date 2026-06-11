@@ -83,13 +83,10 @@ ts-node backend/server.ts  # Inicia apenas backend
 ---
 
 ## 📝 Observações
-O projeto não está publicado no GitHub Pages, pois depende de um backend.
+O projeto está publicado no GitHub Pages agora!!
+O projeto encontra-se funcional e atende aos principais objetivos propostos, incluindo o gerenciamento de contatos por meio das operações CRUD. Algumas melhorias e refinamentos visuais ou funcionais ainda estão previstos para versões futuras, como parte do processo contínuo de evolução da aplicação.
 
-Para hospedar online, recomenda-se usar serviços como:
-
-Frontend: Vercel, Netlify, Firebase Hosting
-
-Backend + Banco de Dados: Render, Railway, Supabase
+Este repositório faz parte do meu portfólio e representa meus conhecimentos práticos em Angular, TypeScript, integração com APIs e desenvolvimento de aplicações web.
 
 ---
 
