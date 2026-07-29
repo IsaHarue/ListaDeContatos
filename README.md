@@ -2,7 +2,7 @@
 
 Uma aplicação web para gerenciar contatos (CRUD completo), desenvolvida com **Angular** no frontend e **Node.js** com **TypeScript** e **PostgreSQL** no backend.
 
-**💫o projeto está publicado online para teste no github pages** ou acesse: 
+**💫o projeto está publicado online para teste no github pages**, acesse: 
 https://isaharue.github.io/ListaDeContatos/
 
 ## 🔧 Funcionalidades
